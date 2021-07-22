@@ -1,4 +1,3 @@
-// gera um https pra poder hostear
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => 
@@ -64,15 +63,5 @@ function verificarPermissao(member,command){
     }
     return verification;
 }
-//famoso codigo frankstain é
-
-  
-//n mexe nas variavel
-  
-
-//ctrl + c | ctrl + v neh fdp da minha propria função do outro bot
-// clbc macho escroto
-
-//login dessa porra
 
 client.login(process.env.TOKEN);
