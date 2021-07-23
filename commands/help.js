@@ -20,8 +20,6 @@ module.exports = (client, msg) => {
   msg.reply(avisoEmbed)
   msg.channel.send("Tirei suas duvidas?")
 }; 
-// L1: a gente n daria certo trampando junto
-// Joao: 
 
 const permissions = config.permissions
 
