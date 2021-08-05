@@ -13,12 +13,13 @@ app.listen(process.env.PORT);
 
 const Discord   = require ('discord.js');
 const client    = new Discord.Client();
+
 const config    = require("./config.json");
 const welcome   = require("./scripts/welcome.js");
 const interacao = require("./scripts/interation.js");
 
 client.on("ready", () =>{
-  
+
   console.log(`Logado com o bot ${client.user.tag}`);
   welcome(client);
   interacao(client);
