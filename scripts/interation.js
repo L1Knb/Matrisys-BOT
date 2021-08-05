@@ -19,24 +19,37 @@ module.exports = async (client, msg) => {
     
     if (msg.content == 'Oi')
     {
-      if (msg.member.id == config.L1Id)
-      {
-        msg.channel.send(`olá L1 como você esta?`);     
-      }
-      else 
-      {
-        msg.reply(`Você não é o L1 😡`);
-      }
-        
+        if  (msg.member.id == config.L1Id)
+        {
+          msg.channel.send(`olá L1 como você esta?`);     
+        }
+        else if (msg.member.id == config.jaoId)
+        {
+            msg.channel.send(`Eae Jao, seu Gostosao`)
+        }
+        else 
+        {
+          msg.reply(`Você não é o L1 nem o Jao 😡`);
+        }
     }
-      if (msg.content == 'bem') 
+  
+
+    if (msg.content == 'bem') 
       {
-        if  (msg.member.id == config.L1Id) 
+        if  (msg.member.id == config.L1Id || msg.member.id == config.jaoid) 
         {
           msg.channel.send(`que bomm 😘`);
         }
-               
       }
+
+    if (msg.content == 'penes')
+    {
+      valor = 10
+      while (--valor)
+      {
+        msg.reply("penes 8==========Dk")
+      }
+    }
 
     if (msg.content == 'bom dia') {
       msg.reply(`Bom dia`);
@@ -68,15 +81,35 @@ module.exports = async (client, msg) => {
     else if (msg.content == 'oi') {
       msg.reply(`oiiieeee :3 (oi cringe)`);
     }
-    else if (msg.content == 'é sobre isso') {
-      msg.reply(`LACROU MANXXX???`);
-    }
     else if (msg.content == 'F') {
         msg.channel.send(`F`);
     }
-    
-  }
-});
+    else if (msg.content == 'Mulher' || msg.content == 'mulher') {
+        msg.reply(`Você quis dizer Bosta?`);
+    }
+    else if (msg.content == 'Judeu' || msg.content == 'judeu') {
+        msg.reply(`Você quis dizer Morto?`);
+    } 
+    else if (msg.content == 'Negros' || msg.content == 'negros' || msg.content == 'Negro' || msg.content == 'negro') {
+        msg.reply(`Você quis dizer macacos?`);
+    } 
+    else if (msg.content == 'nazismo') {
+        msg.channel.send(`:heart:                    :heart::heart::heart::heart::heart::heart:
+:heart:                    :heart:
+:heart:                    :heart:
+:heart:                    :heart:
+:heart::heart::heart::heart::heart::heart::heart::heart::heart::heart:
+                         :heart:                        :heart:
+                         :heart:                        :heart:
+                         :heart:                        :heart:
+:heart::heart::heart::heart::heart:                         :heart:
+`);
+    }   }
+})
+
+//brinca a vontade eu vou tirar esse mnt de else if vou fazer um objeto q agrupa as variantes
+
+// n sei pq vc add ;
 
 
 

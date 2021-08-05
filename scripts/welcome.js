@@ -1,21 +1,18 @@
-const Discord = require("discord.js");
-const config = require("../config.json");
+const Discord     = require("discord.js");
+const config      = require("../config.json");
 
-module.exports = (client, member) => {
+module.exports    = (client, member) => {
   const channelId = config.boasVindasChannelId;
-  //const rulesChannel = config.rulesChannelId;
-  //const tagsChannel = config.tagsChannelId;
-  //const tagsAddChannel = config.tagsAddChannelId;
 
   client.on("guildMemberAdd", (member) => {
     console.log(member);
     
     
   const embed = new Discord.MessageEmbed()
-    .setColor('#483D8B')
+    .setColor('#1A1A1A')
     .setThumbnail(member.user.avatarURL())
     .setDescription(`Seja bem-vindo a Matrisys Fundation`)
-    //.setImage("https://i.imgur.com/gvf8PAl.png")
+    .setImage("https://cdn.discordapp.com/attachments/872245099663360010/872620044314619904/ab.png")
     .setTimestamp()
 	  .setFooter('Matrisys Foundation Server');
 
