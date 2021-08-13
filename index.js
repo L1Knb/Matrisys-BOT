@@ -1,5 +1,5 @@
-const express   = require('express');
-const app       = express();
+const express  = require('express');
+const app      = express();
 
 app.get("/", (request, response) => 
 {
@@ -17,13 +17,18 @@ const client    = new Discord.Client();
 const config    = require("./config.json");
 const welcome   = require("./scripts/welcome.js");
 const interacao = require("./scripts/interation.js");
+const status    = require("./scripts/activityStatus");
+
+
 
 client.on("ready", () =>{
 
   console.log(`Logado com o bot ${client.user.tag}`);
+
+  status(client);
   welcome(client);
   interacao(client);
-
+  
 });
 
 
